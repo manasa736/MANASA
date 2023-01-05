@@ -1,6 +1,16 @@
-print("int: {0:d}; hex: {0:x}; oct: {0:o}; bin: {0:b}".format(42,55))
-print("int: {1:d}; hex: {1:x}; oct: {1:o}; bin: {1:b}".format(42,55))
-print('{:,}'.format(1234567890))
-points = 19.0; total = 22
-print('correct answers: {:.5%}'.format(points/total))
-print('correct answers: {:.5}'.format(points/total))
+class Vector2D:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def __add__(self,ob):
+        return Vector2D(self.x+ob.x,self.y+ob.y)
+    def __sub__(self,other):
+        return Vector2D(self.x-other.x,self.y-other.y)
+first=Vector2D(5,7)
+second=Vector2D(3,8)
+result=first+second
+print(result.x)
+print(result.y)
+result=first-second
+print(result.x)
+print(result.y)

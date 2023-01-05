@@ -1,11 +1,21 @@
+class Animal:
+   def __init__(self,name,color):
+        self.name=name
+        self.color=color
 
-print('{0},{1},{2}'.format('apple', 'banana', 'carrot', 'pen'))
+class Cat(Animal):
 
-print('{0},{0}{0},{1},{2}'.format('apple', 'banana', 'carrot', 'pen'))
-
-print('{0},{0},{3},{1},{2}'.format('apple', 'banana', 'carrot', 'pen'))
-
-print('{0},{1},{2},{0},{3},{1},{2}'.format('apple', 'banana', 'carrot', 'pen'))
-
-print('{0}{1}{2}{0}{3}{1}{2}'.format('apple', 'banana', 'carrot', 'pen'))
-
+    def mew(self):
+        print("Cat meows")
+class Dog(Animal):
+    def bark(self):
+        print("Woof")
+        
+if __name__ == "__main__":
+    print(__name__)
+    pet1=Dog("Tommy","brown")
+    pet2=Cat("luky","white")
+    pet1.bark()
+    pet2.mew()
+    print(pet1.name)
+    print(pet2.name)

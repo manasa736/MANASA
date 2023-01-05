@@ -1,12 +1,7 @@
-inp=input()
-ans=[]
-for i in inp:
-   if i in '0123456789':
-       ans.append(i)
-print(*ans)
-
-
-
-inp=input()
-ans=[i for i in inp if i in '0123456789']
-print(*ans)
+class Point:
+    def __init__( self, x=0, y=0):
+        self.x = x
+        self.y = y
+    def __del__(self):
+        class_name = self.__class__.__name__
+        print (class_name, "destroyed")

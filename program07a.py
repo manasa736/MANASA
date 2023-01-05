@@ -1,10 +1,10 @@
 class A:
     def first_method(self):
         print("Method of class A..")
-class B(A):
+class B:
     def second_method(self):
         print("Method of class B..")
-class C(B):
+class C(A,B):
     def third_method(self):
         print("Method of class C..")
 

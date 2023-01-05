@@ -1,10 +1,11 @@
-coord = [(3, 9),(2,4)]
-print('first tuple: {0[0]},{0[1]},second tuple: {1[0]},{1[1]}'.format(*coord))
+class A:
+    def first_method(self):
+        print("Method of class A..")
+class B(A):
+    def first_method(self):
+        print("Method of class B..")
+        super().first_method()
 
-print('{:#<30}'.format('Apple'))
-print('{:*>30}'.format('Apple'))
-print('{:^30}'.format('Apple'))
-print('{:*^30}'.format('Apple'))
 
-
-
+ob=B()
+ob.first_method()

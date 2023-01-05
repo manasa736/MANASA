@@ -1,23 +1,17 @@
-lsteven=[]
-lstodd=[]
-while(True):
-    
-    n=int(input("enter a value(-1 to end):"))
-    if n==-1:
-        break
-    elif n%2==0:
-        lsteven.append(n)
-    elif
-    n%2==1:
-        lstodd.append(n)
-        
-print("even:",*lsteven)
-print("min:",min(lsteven))
-print("max:",max(lsteven))
-print("avg:",round(sum(lsteven)/len(lsteven),1))
+class Cat:
+    def __init__(self,color,legs):
+        self.color=color
+        self.legs=legs
+    def __str__(self):
+        temp="cat is "+self.color +'color' +'and has' +str(self.legs)+'legs'
+        return temp
+if __name__== "__main__":
+    pet1=Cat("ginger",4)
+    print(pet1.legs)
+    print(pet1.color)
+    print(pet1)
 
-        
-print("odd:",*lstodd)
-print("min:",min(lstodd))
-print("max:",max(lstodd))
-print("avg:",round(sum(lstodd)/len(lstodd),1))
+    pet2=Cat("brown",3)
+    print(pet2.color)
+    print(pet2.legs)
+    print(pet2)
